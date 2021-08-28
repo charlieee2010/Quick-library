@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Control.CameraOnlyActivity">
+
+    <ImageView
+        android:contentDescription="@string/title_scan"
+        android:id="@+id/image_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/cam_only_text_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_result"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cam_only_text_result"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/bookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookTitle"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/addBooksButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bookAuthor"
+        android:layout_margin="5dp"
+        android:text="Add"
+        android:enabled="false"
+        android:backgroundTint="@color/dark_yellow_dark"/>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/addBooksProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/addBooksButton"/>
+
+    <ListView
+        android:id="@+id/resultBooksListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addBooksProgress"
+        android:choiceMode="multipleChoice"
+        android:listSelector="@drawable/list_selector"/>
+
+
+
+</RelativeLayout>

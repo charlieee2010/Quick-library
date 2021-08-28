@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Widget.MaterialComponents.BottomAppBar"
+    tools:context=".Control.MainPageActivity2"
+    android:orientation="vertical">
+
+
+    <!--<include layout="@layout/content_main" />-->
+
+    <TextView
+        android:id="@+id/mybooks_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_mybooks"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/mybooks_title"
+        android:background="?android:attr/listDivider"
+        android:layout_marginBottom="5dp"/>
+
+    <ListView
+        android:id="@+id/main_my_books"
+        android:layout_below="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_selector"
+        tools:listitem="@layout/list_item"/>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bottom_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:backgroundTint="@color/light_blue_600"
+                app:fabAlignmentMode="center"
+                app:navigationIcon="@drawable/ic_menu_24" />
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/add_book_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/dark_yellow_dark"
+                android:src="@drawable/ic_add_24"
+                app:layout_anchor="@id/bottom_app_bar" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

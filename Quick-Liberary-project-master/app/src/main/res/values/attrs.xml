@@ -1,0 +1,12 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SplashScreenAttrs">
+        <attr name="splashBackgroundColor" format="color" />
+        <attr name="splashTextColor" format="color" />
+        <attr name="splashFooterColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "155361617396",
+    "project_id": "quick-liberary-1607974829109",
+    "storage_bucket": "quick-liberary-1607974829109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155361617396:android:1a3d39e862cc40be7b85a1",
+        "android_client_info": {
+          "package_name": "com.sidduron.easy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155361617396-2c0j8vpkt94grarjekql3vubl2mg5soo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCul2iZSJi2XJ-95Vj09dle_m50QQDxXkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155361617396-2c0j8vpkt94grarjekql3vubl2mg5soo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

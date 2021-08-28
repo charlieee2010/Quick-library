@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <ImageView
+        android:id="@+id/bookProfileImage"
+        android:layout_width="100px"
+        android:layout_height="150px"/>
+
+    <TextView
+        android:id="@+id/bookprofileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bookProfileImage"
+        android:layout_toEndOf="@+id/bookProfileImage"
+        android:text="Title"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/bookprofileAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bookProfileImage"
+        android:layout_below="@+id/bookprofileTitle"
+        android:text="Author"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/bookprofileISBN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bookProfileImage"
+        android:layout_below="@+id/bookprofileAuthor"
+        android:text="ISBN"
+        android:textSize="9dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"/>
+
+    <!--<CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>-->
+
+</RelativeLayout>
